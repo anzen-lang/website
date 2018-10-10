@@ -1,0 +1,9 @@
+baseURL = "https://anzen-lang.org/"
+languageCode = "en-us"
+title = "Documentation"
+theme = "learn"
+
+# Hugo-theme-learn specific parameters:
+[params]
+  disableInlineCopyToClipBoard = false
+  themeVariant = "red"
