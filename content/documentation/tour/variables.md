@@ -23,8 +23,8 @@ whose value cannot be mutated.
 using the *type qualifier* `@mut`:
 
 ```anzen
-let level: @mut = 1
-level = level + 1
+let level: @mut := 1
+level := level + 1
 ```
 
 The *semantic type* of a reference represents
@@ -46,16 +46,16 @@ The reason is that it has been *borrowed* immutable in the second statement.
 Therefore, the reference has lost its mutation capability in this particular context.
 
 ```anzen
-let level: @mut = 1
+let level: @mut := 1
 
 let const_level &- level
-level = 2
+level := 2
 // error: cannot assign: 'level' has been moved
 ```
 
 {{% notice note %}}
 Notice the use of the borrow assignment `&-` at line 2,
-instead of the copy assignment `=` that's been used elsewhere so far.
+instead of the copy assignment `:=` that's been used elsewhere so far.
 Assignment operators occupy a very important role in Anzen,
 and will be discussed further in a later chapter.
 {{% /notice %}}
@@ -67,5 +67,5 @@ or because the context does not contain enough information for Anzen to figure o
 Such additional information are called *type annotations*:
 
 ```anzen
-let list: List<Int> = []
+let list: List<Int> := []
 ```

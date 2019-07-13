@@ -10,7 +10,6 @@ This section serves as reference for the Anzen programming language and its deve
 It contains the following resources:
 
 * [A bite-sized tour of Anzen's core features]({{< ref "tour" >}})
-* [An informal documentation of the Anzen compiler]({{< ref "compiler" >}})
 
 The section will also contain other resources that are still in the pipeline:
 
